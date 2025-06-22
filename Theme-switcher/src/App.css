@@ -1,0 +1,58 @@
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Button base style */
+.theme-button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Light theme button */
+.light-theme .theme-button {
+  background-color: #dcdcdc;
+  color: #333;
+}
+
+.light-theme .theme-button:hover {
+  background-color: #c0c0c0;
+}
+
+/* Dark theme button */
+.dark-theme .theme-button {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.dark-theme .theme-button:hover {
+  background-color: #555;
+}
+
+/* Light Theme */
+.light-theme {
+  --card-bg: #ffffff;
+  --card-text: #111;
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --card-bg: #1e1e1e;
+  --card-text: #f0f0f0;
+  background-color: #121212;
+  color: #fff;
+}
